@@ -11,3 +11,12 @@ ax.set(title='time series demo', xlabel = 'Year', ylabel = 'Value')
 ax.grid(True, alpha = 0.5)
 plt.show()
 '''
+
+fig, ax = plt.subplots()
+ax.plot(df['Year'], df['G+A'], marker='o', linewidth=2)
+
+
+#all_stats = df.groupby('Year')['G+A'].max().reset_index()
+#overall_ga = all_stats.sort_values('G+A', ascending=False).head(5)
+#print('\nTop 5 Highest G+As recorded: ')
+#print(overall_ga)
