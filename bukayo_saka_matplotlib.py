@@ -14,6 +14,9 @@ plt.show()
 
 fig, ax = plt.subplots()
 ax.plot(df['Year'], df['G+A'], marker='o', linewidth=2)
+ax.set(title='Bukayo Saka G+A in all seasons', xlabel='Year', ylabel='G+A')
+ax.grid(True, alpha=0.5)
+plt.show()
 
 
 #all_stats = df.groupby('Year')['G+A'].max().reset_index()
