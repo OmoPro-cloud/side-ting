@@ -18,6 +18,31 @@ print(df[df['Age'] > 25])
 #people whose age is greater than 25 and live in new york
 #print(df1[(df1['Age'] > 25) & (df1['City'] == 'Chicago')])
 
+#NUMPY TASKS
+
+#Array Slicing: Load the numeric data (Age, Appearances, Goals, Assists) into a NumPy array. Use slicing to extract only Appearances and Goals columns.
+
+
+
+#Goals–Assists Ratio: Compute the ratio Goals / Assists for each player. Identify which player has the highest value.
+
+
+
+#Standardize Goals: Perform Z‑score normalization on the Goals array then, find which player’s normalized value is closest to zero (the mean).
+
+
+
+#Percentile Filtering: Determine the top 20th percentile for Goals and Assists separately. Use Boolean masking to list which players fall above each threshold.
+
+
+
+
+#Random Perturbation & Mean Difference: Create a small random noise array (e.g. ±5% of Goals) and add it to the Goals array. Compute and report the mean difference between the original and perturbed goals.
+
+
+
+
+#PANDAS TASKS
 #Efficient Column: Add a new DataFrame column called Goal_Efficiency = Goals / Appearances, and round it to two decimal places.
 goal_efficiency = df['Goals' / 'Appearances']
 goal_eff_rounded = round(goal_efficiency, 2)
