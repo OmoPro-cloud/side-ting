@@ -9,10 +9,10 @@ def get_weather(city, api_key):
     return None
   
   temp_k = data['main']['temp']
-  temp_c = temp_c - 273.15
+  temp_c = temp_k - 273.15
   description = data['weather'][0]['description']
   print(f'Weather in {city}: {description}')
-  print(f'Temperature in {city}: {temp_k:.2f}°C')
+  print(f'Temperature in {city}: {temp_c:.2f}°C')
   return True
 
 def main(api_key):
