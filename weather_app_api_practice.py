@@ -1,6 +1,14 @@
 import requests
 
-#NEW: if an HTTP response is 200, then your request has succeeded. If it's response is a 404, then the source couldn't be found, and 500 indicates a server error
+
+'''
+NEW: if an HTTP response is 200, then your request has succeeded.
+If it's response is a 404, then the source couldn't be found.
+A response of 500 indicates a server error
+'''
+
+
+
 #write a function that will take an input(city) from the user and return its current weather
 
 def get_weather(city, api_key):
