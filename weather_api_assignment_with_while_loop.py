@@ -1,5 +1,6 @@
 import requests
 
+'''Current VSCode theme is "One Dark" extension, "Coldy Python Theme" extension is pretty dope too'''
 def get_weather(city, api_key):
   url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}'
   response = requests.get(url)
@@ -28,3 +29,4 @@ def main(api_key):
 if __name__ == '__main__':
   api_key = '6162d674c0d3ce291204035f9a8ce1e7'
   main(api_key)
+  print()
