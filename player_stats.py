@@ -10,7 +10,7 @@ print('\nTop 10 goals scorers this season: ')
 print(top10_gs)
 
 #print clubs with top 10 goals scored
-all_gs = df.groupby('goals_overall')['current_club'].max().reset_index()
-top10_gs = df.sort_values('goals_overall', ascending=False).head(10)
-print('\nTop 10 goals scorers this season: ')
-print(top10_gs)
+all_cg = df.groupby('goals_overall')['Current Club'].max().reset_index()
+top10_cs = df.sort_values('goals_overall', ascending=False).head(10)
+print('\nTop 10 highest scoring clubs this season: ')
+print(top10_cs)
