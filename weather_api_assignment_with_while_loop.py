@@ -21,4 +21,10 @@ def main(api_key):
     if city.lower() == 'bye':
       print('Goodbye')
       break
-    
+    success = get_weather(city, api_key)
+    if success is None:
+      print('Unable to proceed with request. Please try again.')
+
+if __name__ == '__main__':
+  api_key = '6162d674c0d3ce291204035f9a8ce1e7'
+  main(api_key)
